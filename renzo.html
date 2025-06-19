@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nosotros</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Roboto', sans-serif;
+      background: radial-gradient(circle at bottom right, #1e0036, #000);
+      color: white;
+      background-attachment: fixed;
+      position: relative;
+    }
+
+    body::before, body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 60px;
+      background: url('borde-lateral.png') repeat-y center;
+      z-index: 1;
+    }
+
+    body::before {
+      left: 0;
+    }
+
+    body::after {
+      right: 0;
+      transform: scaleX(-1);
+    }
+
+    .background-circles {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(187, 134, 252, 0.08);
+      box-shadow: 0 0 80px rgba(187, 134, 252, 0.4);
+      animation: float 8s infinite ease-in-out;
+    }
+
+    .circle1 {
+      width: 400px;
+      height: 400px;
+      top: 10%;
+      left: -100px;
+    }
+
+    .circle2 {
+      width: 300px;
+      height: 300px;
+      bottom: 10%;
+      right: -100px;
+    }
+
+    .circle3 {
+      width: 200px;
+      height: 200px;
+      top: 40%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) scale(1);
+      }
+      50% {
+        transform: translateY(-20px) scale(1.05);
+      }
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      z-index: 2;
+      position: relative;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      padding: 60px 80px 40px;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .text-content {
+      flex: 2;
+      padding-right: 2em;
+    }
+
+    header {
+      margin-bottom: 2em;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.5em;
+      color: white;
+    }
+
+    header a {
+      color: #bb86fc;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 0.5em;
+    }
+
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.5em;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+
+    p, li {
+      font-size: 1.1em;
+      color: #dddddd;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li::before {
+      content: "⟡ ";
+      color: #bb86fc;
+    }
+
+    .photo {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .photo img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #bb86fc55;
+    }
+
+    .extra-images {
+      display: flex;
+      gap: 1.5em;
+      margin-top: 2em;
+      flex-wrap: wrap;
+    }
+
+    .extra-images img {
+      width: 100%;
+      max-width: 240px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(187, 134, 252, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .extra-images img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #bb86fc;
+      color: black;
+      text-align: center;
+      padding: 1em;
+      font-weight: bold;
+      font-size: 0.95em;
+      z-index: 2;
+      position: relative;
+    }
+
+    @media (max-width: 900px) {
+      .main-content {
+        flex-direction: column;
+        padding: 2em;
+      }
+
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .text-content {
+        padding-right: 0;
+      }
+
+      .photo {
+        margin-top: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="background-circles">
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+  </div>
+
+  <div class="wrapper">
+    <div class="main-content">
+      <div class="container">
+        <div class="text-content">
+          <header>
+            <h1>Renzo Choquehuanca</h1>
+            <a href="index.html">← Volver al Dashboard</a>
+          </header>
+
+          <h2>Perfil</h2>
+          <p>
+            Renzo se especializa en ilustración digital y creación de personajes, destacándose en el diseño de portadas de libros, cómics y material gráfico narrativo. Su enfoque combina creatividad visual con propósito comunicativo, lo que le permite desarrollar piezas que no solo impactan visualmente, sino que también cuentan historias.
+
+Encuentra gran parte de su inspiración en los videojuegos, el cine y la cultura pop, elementos que nutren su estilo visual dinámico, expresivo y orientado a lo conceptual. Además, ama escuchar música, la cual utiliza como una herramienta sensorial para conectar con las emociones que desea transmitir en cada obra.
+
+Como diseñador, domina tanto el proceso técnico como la planificación visual, aplicando principios de composición, teoría del color y diseño centrado en la experiencia. Le apasiona crear desde identidades visuales hasta ilustraciones editoriales y concept art, explorando constantemente nuevas herramientas digitales que potencien su flujo de trabajo.
+
+Su versatilidad le permite adaptarse a proyectos editoriales, campañas publicitarias y productos digitales, manteniendo siempre un sello personal que combina detalle, narrativa y estética contemporánea.
+
+          </p>
+
+          <h2>Habilidades</h2>
+          <ul>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Procreate</li>
+            <li>Blender</li>
+            <li>InDesign</li>
+            <li>Figma</li>
+          </ul>
+
+          <div class="extra-images">
+            <img src="BLOG/diseño videojuegos (1).jpg" alt="Trabajo 1">
+            <img src="BLOG/ilustrador-digital-1200x630.original.jpg" alt="Trabajo 2">
+          </div>
+        </div>
+
+        <div class="photo">
+          <img src="BLOG/IMG20231202210322~2.jpg" alt="Foto de Renzo">
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      RENZO DEL PIERO CHOQUEHUANCA REYES — dchoquehuare10@ucvvirtual.edu.pe
+    </footer>
+  </div>
+
+</body>
+</html>

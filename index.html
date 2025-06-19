@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Estudiantes de Diseño Gráfico</title>
+  <style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1.5em;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  padding: 2em;
+}
+
+.card {
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+main {
+  padding: 2em;
+}
+  </style>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Estudiantes de Diseño Gráfico</h1>
+  </header>
+   <img src="FONDO.1.jpg" >
+  <main class="dashboard">
+    <a class="card" href="renzo.html">
+      <h2>Renzo Choquehuanca</h2>
+      <p>Ilustración digital y branding.</p>
+    </a>
+    <a class="card" href="alisson.html">
+      <h2>Alisson Enco</h2>
+      <p>Animación y motion graphics.</p>
+    </a>
+    <a class="card" href="letizia.html">
+      <h2>Letizia Poma</h2>
+      <p>Diseño UX/UI y prototipado web.</p>
+    </a>
+    <a class="card" href="diego.html">
+      <h2>Diego Tapullima</h2>
+      <p>Identidad visual y diseño editorial.</p>
+    </a>
+  </main>
+</body>
+</html>
